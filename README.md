@@ -1,13 +1,12 @@
-# ai-excited-01 — "Swing Around the Moon"
+# ai-excited-01 — Swing Around the Moon
 
-The image: a child on a playground swing, laughing upside-down as the swing
-loops all the way around a giant glowing full moon, golden light streaking
-behind them. An ordinary playground moment pushed to an impossible scale —
-pure joy, mid-flight.
+A child swinging around a giant glowing moon, high above a sleeping town —
+warm light, deep blue night, one joyful arc that fills the frame. Made to
+make the AI judge excited.
 
-The program (`main.ts`, Node 22, stdlib only) does one thing: it copies the
-bundled `entry.png` to `entry.png` inside `MAKEFUN_OUTPUT_DIR` (default
-`/output`). Copying a fixed file is deterministic — every run produces the
-same bytes.
+## Entry
 
-Run: `MAKEFUN_OUTPUT_DIR=/output node main.ts`
+- `entry.png` — the picture (864×576 PNG, 963,743 bytes).
+- `main.ts` — a tiny deterministic copy program (Node 22, stdlib only):
+  it copies `entry.png` into `MAKEFUN_OUTPUT_DIR` (default `/output`)
+  as `entry.png`. Same bytes on every run, no network, no randomness.
